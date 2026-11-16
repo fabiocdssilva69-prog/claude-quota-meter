@@ -48,6 +48,25 @@ Os botões da janela e o duplo clique passam de uma para outra, e a escolha fica
 
 ## Instalar
 
+### Como plugin do Claude Code (mais rápido)
+
+Dentro do Claude Code (2.1.275 ou superior):
+
+```
+/plugin install arc-quota-meter --marketplace fabiocdssilva69-prog/claude-quota-meter
+```
+
+Depois rode `/arc-quota-meter:setup` uma vez. Ele instala as dependências e liga o gancho da linha de estado, pedindo
+licença antes de cada mudança. O plugin traz três skills:
+
+| skill | |
+|---|---|
+| `quota` | lê as janelas de 5 h e da semana e a força, e diz quantos subagentes cabem antes de você abrir vários |
+| `meter` | abre ou fecha o medidor na área de trabalho |
+| `setup` | configuração inicial |
+
+### À mão
+
 ```bash
 git clone https://github.com/fabiocdssilva69-prog/claude-quota-meter
 cd claude-quota-meter

@@ -47,6 +47,25 @@ The window buttons and a double click switch between them, and your choice is re
 
 ## Install
 
+### As a Claude Code plugin (quickest)
+
+Inside Claude Code (2.1.275 or later):
+
+```
+/plugin install arc-quota-meter --marketplace fabiocdssilva69-prog/claude-quota-meter
+```
+
+Then run `/arc-quota-meter:setup` once. It installs the dependencies and wires the status line hook, asking before each
+change. The plugin adds three skills:
+
+| skill | |
+|---|---|
+| `quota` | reads your 5-hour and weekly windows and the force, and says how many subagents fit before you fan out |
+| `meter` | opens or closes the desktop meter |
+| `setup` | first-time setup |
+
+### By hand
+
 ```bash
 git clone https://github.com/fabiocdssilva69-prog/claude-quota-meter
 cd claude-quota-meter
