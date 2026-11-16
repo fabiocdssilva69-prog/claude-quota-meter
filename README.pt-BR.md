@@ -135,6 +135,13 @@ python -m pytest tests -q
 53 testes, incluindo propriedades Hypothesis: a força nunca quebra com `None`, 0% ou 100%; duas máquinas com as mesmas
 leituras concordam; o gancho grava exatamente uma leitura por passo da grade.
 
+## Versão Pro, equipes e apoio
+
+O medidor é gratuito e de código aberto, e continua assim. Estamos medindo o interesse numa **versão Pro**: um
+companheiro para tablet Android (já em uso interno), várias contas do Claude ao mesmo tempo, alertas por SMS ou
+WhatsApp antes de a cota acabar e um painel para equipes. Se quiser acesso antecipado, uma versão sob medida para a
+sua empresa ou apoiar o projeto, escreva para **contato@3brain.com.br**.
+
 ## Licença
 
 [MIT](LICENSE) © 2026 3BRAIN

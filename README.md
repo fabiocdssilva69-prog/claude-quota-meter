@@ -133,6 +133,13 @@ python -m pytest tests -q
 53 tests, including Hypothesis properties: the force never breaks on `None`, 0% or 100%; two machines with the same
 readings agree; the hook writes exactly one reading per grid step.
 
+## Pro version, teams and support
+
+The meter is free and open source, and it stays that way. We are gauging interest in a **Pro version**: an Android
+tablet companion (already running in-house), several Claude accounts at once, alerts by SMS or WhatsApp before the
+quota runs out, and a dashboard for teams. If you want early access, a custom build for your company, or to support
+the project, write to **contato@3brain.com.br**.
+
 ## License
 
 [MIT](LICENSE) © 2026 3BRAIN
