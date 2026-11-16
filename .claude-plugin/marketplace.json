@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "arc-quota-meter",
-      "source": "./"
+      "source": "./plugin"
     }
   ]
 }

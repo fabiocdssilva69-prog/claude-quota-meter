@@ -1,8 +1,8 @@
 {
   "name": "arc-quota-meter",
   "displayName": "Quota Meter (Arc Reactor)",
-  "version": "1.0.0",
-  "description": "See your Claude Code 5-hour and weekly quota, the reset times and your spending force before you fan out subagents. Ships the always-on-top Arc Reactor desktop meter for Windows.",
+  "version": "1.1.0",
+  "description": "Reads your real Claude Code quota (5-hour and weekly windows, time to each reset, spending force) and says how many subagents still fit before you fan out. Standard-library Python, Windows, macOS and Linux.",
   "author": {
     "name": "3BRAIN (Fabio da Silva and Bruno da Silva)",
     "email": "contato@3brain.com.br",
@@ -11,8 +11,8 @@
   "homepage": "https://github.com/fabiocdssilva69-prog/claude-quota-meter",
   "repository": "https://github.com/fabiocdssilva69-prog/claude-quota-meter",
   "license": "MIT",
-  "keywords": ["quota", "usage", "rate-limits", "subagents", "statusline", "windows"],
-  "icon": "./docs/img/icon.png",
+  "keywords": ["quota", "usage", "rate-limits", "subagents", "statusline"],
+  "icon": "./icon.png",
   "documentationUrl": "https://github.com/fabiocdssilva69-prog/claude-quota-meter#readme",
   "supportUrl": "https://github.com/fabiocdssilva69-prog/claude-quota-meter/issues"
 }

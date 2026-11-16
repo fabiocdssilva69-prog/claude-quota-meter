@@ -55,14 +55,16 @@ Inside Claude Code (2.1.275 or later):
 /plugin install arc-quota-meter --marketplace fabiocdssilva69-prog/claude-quota-meter
 ```
 
-Then run `/arc-quota-meter:setup` once. It installs the dependencies and wires the status line hook, asking before each
-change. The plugin adds three skills:
+Then run `/arc-quota-meter:setup` once. It wires the status line hook, asking before it writes anything. The plugin
+adds two skills:
 
 | skill | |
 |---|---|
 | `quota` | reads your 5-hour and weekly windows and the force, and says how many subagents fit before you fan out |
-| `meter` | opens or closes the desktop meter |
 | `setup` | first-time setup |
+
+The plugin uses only the Python standard library, on Windows, macOS and Linux. The desktop window below is installed by
+hand.
 
 ### By hand
 
