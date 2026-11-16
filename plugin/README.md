@@ -12,21 +12,22 @@ Made by [3BRAIN](https://3brain.com.br) with Claude Code. Not affiliated with or
 /plugin install arc-quota-meter --marketplace fabiocdssilva69-prog/claude-quota-meter
 ```
 
-Then run `/arc-quota-meter:setup` once. It shows the change, asks before writing, backs up `~/.claude/settings.json`
-and never replaces an existing status line.
+Then run `/arc-quota-meter:setup` once. With your consent it downloads the open-source reader from this repository
+(MIT, standard-library Python, folder `quota_governor/`), backs up `~/.claude/settings.json` and wires the status line
+hook. It never replaces an existing status line.
 
 ## Skills
 
 | skill | |
 |---|---|
 | `quota` | reads the quota and the force, and decides how many subagents fit before fanning out |
-| `setup` | one-time setup of the status line hook |
+| `setup` | one-time setup: downloads the reader and wires the status line hook |
 
 ## Requirements
 
 - Claude Code 2.1.80 or later on a claude.ai Pro or Max plan (that is when Claude Code started handing the official
   `rate_limits` to the status line)
-- Python 3.10+ (standard library only), on Windows, macOS or Linux
+- Python 3.10+ (standard library only) and git, on Windows, macOS or Linux
 
 ## Privacy
 

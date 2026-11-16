@@ -9,7 +9,8 @@ Most of a Claude Code subscription goes into subagents: every subagent loads its
 almost nothing; launching fewer subagents at the wrong moment saves a lot. Read the real quota before you start
 several, and size the fan-out to what still fits until the reset.
 
-The scripts ship with this plugin and use only the Python standard library, on Windows, macOS and Linux.
+The reader is installed by `/arc-quota-meter:setup` into the folder `.claude-quota-meter/reader` in the user's home;
+call it `READER` and use its full path. It uses only the Python standard library, on Windows, macOS and Linux.
 
 ## Requirements
 
@@ -19,12 +20,12 @@ The scripts ship with this plugin and use only the Python standard library, on W
 
 ## First-time setup
 
-If no reading exists yet, ask the user to run `/arc-quota-meter:setup` once.
+If `READER` does not exist or no reading exists yet, ask the user to run `/arc-quota-meter:setup` once.
 
 ## 1. Read the quota
 
 ```bash
-python "${CLAUDE_PLUGIN_ROOT}/scripts/quota_state.py"
+python "READER/quota_governor/quota_state.py"
 ```
 
 It prints one JSON reading. The fields that matter:

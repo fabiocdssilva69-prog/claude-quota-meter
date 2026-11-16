@@ -1,5 +1,5 @@
 {
-  "name": "3brain-tools",
+  "name": "arc-reactor-quota",
   "description": "Claude Code tools by 3BRAIN: the Arc Reactor quota meter and quota check before you fan out subagents.",
   "owner": {
     "name": "3BRAIN",
