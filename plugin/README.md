@@ -31,8 +31,13 @@ hook. It never replaces an existing status line.
 
 ## Privacy
 
-The hook writes only to `~/.claude-quota-meter/`. The plugin reads no token, calls no model and sends nothing anywhere.
-To count subagents in flight it reads the timestamps of the local Claude Code session files; it keeps only counts.
+- **Stored:** quota readings (percent used of the 5-hour and weekly windows, and reset times) in `~/.claude-quota-meter/`
+  on your computer. The readings file is capped at 4 MB; delete the folder at any time to remove everything.
+- **Read:** the `rate_limits` Claude Code hands to the status line, and the local Claude Code session files, only to
+  count recent model calls and subagents in flight. Only the counts are kept; no message content is stored.
+- **Sent:** nothing. No token is read, no model is called and no data leaves your computer. The only network access is
+  the one-time `git clone` of this repository during setup, after you agree.
+- **Contact:** contato@3brain.com.br
 
 ## Desktop meter
 

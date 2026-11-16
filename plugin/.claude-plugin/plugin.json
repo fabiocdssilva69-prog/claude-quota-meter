@@ -17,5 +17,8 @@
     "subagents",
     "statusline"
   ],
-  "icon": "./icon.png"
+  "icon": "./icon.png",
+  "documentationUrl": "https://github.com/fabiocdssilva69-prog/claude-quota-meter/blob/main/plugin/README.md",
+  "supportUrl": "https://github.com/fabiocdssilva69-prog/claude-quota-meter/issues",
+  "privacyPolicyUrl": "https://github.com/fabiocdssilva69-prog/claude-quota-meter/blob/main/plugin/README.md#privacy"
 }
